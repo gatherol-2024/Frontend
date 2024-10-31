@@ -1,0 +1,7 @@
+{
+  "name": "@lvc/config-tailwind",
+  "version": "1.0.0",
+  "exports": {
+    ".": "./tailwind.config.ts"
+  }
+}
