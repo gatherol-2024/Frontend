@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@lvc/ui": "workspace:^",
+    "next": "15.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "eslint-config-next": "15.0.2"
+  }
+}
