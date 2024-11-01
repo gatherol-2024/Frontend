@@ -6,18 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"pnpm -F ui dev\" \"pnpm -F web dev\"",
-    "build": "concurrently \"pnpm -F ui build\" \"pnpm -F web build\""
+    "build": "concurrently \"pnpm -F ui build\" \"pnpm -F web build\"",
+    "ui": "pnpm -F ui",
+    "web": "pnpm -F web"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@lvc/config-tailwind": "workspace:*",
     "@lvc/config-typescript": "workspace:*",
+    "@lvc/shared": "workspace:*",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",

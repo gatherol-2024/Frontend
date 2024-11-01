@@ -1,0 +1,3 @@
+{
+  "extends": "@lvc/config-typescript/base.json"
+}
