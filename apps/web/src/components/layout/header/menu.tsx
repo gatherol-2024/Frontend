@@ -14,9 +14,7 @@ const HeaderMenu = ({ children, href }: HeaderMenuProps) => {
     fistPathname === href ? 'border-b-2 text-primary border-primary' : ''
   return (
     <Link href={href}>
-      <Button
-        size="lg"
-        className={`${isActive} hover:text-primary duration-200`}>
+      <Button className={`${isActive} hover:text-primary duration-200`}>
         {children}
       </Button>
     </Link>
