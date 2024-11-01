@@ -1,11 +1,17 @@
-import { Config } from "tailwindcss";
+import { Config } from 'tailwindcss'
 
-const preset: Omit<Config, "content"> = {
+const preset: Omit<Config, 'content'> = {
   theme: {
     colors: {
-      test: "#20c997",
+      primary: '#029CFD',
+      secondary: '#FF7F32',
+      white: '#FFF',
+      black: '#000'
     },
-  },
-};
+    screens: {
+      xs: '480px'
+    }
+  }
+}
 
-export default preset;
+export default preset
