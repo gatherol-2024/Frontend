@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lvc/shared": "workspace:^",
     "@lvc/ui": "workspace:^",
     "@types/react-icons": "^3.0.0",
     "next": "15.0.2",
