@@ -2,7 +2,15 @@
   "name": "@lvc/shared",
   "version": "1.0.0",
   "exports": {
-    "./types": "./types/index.ts"
+    "./types": "./types/index.ts",
+    "./hooks": "./hooks/index.ts",
+    "./utils": "./utils/index.ts",
+    "./api": "./api/index.ts"
   },
-  "author": ""
+  "author": "",
+  "devDependencies": {
+    "@types/socket.io-client": "^3.0.0",
+    "cookies-next": "^4.3.0",
+    "socket.io-client": "^4.8.1"
+  }
 }
