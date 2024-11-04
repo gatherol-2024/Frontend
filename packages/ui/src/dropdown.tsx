@@ -27,18 +27,18 @@ const Dropdown = ({
     xl: 'px-6 py-3 text-xl font-bold'
   };
 
-  const ItemList = items?.map((item, key) => (
+  const ItemList = items?.map(({ itemTitle, itemValue }, key) => (
     <div
-      className={`${SIZE[size]} ${item == value ? 'text-primary' : 'text-black'} border-b border-gray-300 duration-200 hover:bg-gray-100`}
+      className={`${SIZE[size]} ${itemValue == value ? 'text-primary' : 'text-black'} whitespace-nowrap border-b border-gray-300 duration-200 hover:bg-gray-100`}
       key={key}
-      onClick={() => handleSelect(item)}>
-      {item}
+      onClick={() => handleSelect(itemValue)}>
+      {itemTitle}
     </div>
   ));
   return (
     <div className={`${className} relative w-fit`}>
       <Button onClick={toggleDropdown}>
-        {value}
+        {items?.find((item) => item.itemValue == value)?.itemTitle}
         <RiArrowDropDownLine size="1.5rem" />
       </Button>
       {isDropdownOpen && (
