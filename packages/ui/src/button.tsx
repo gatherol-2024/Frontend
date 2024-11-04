@@ -14,7 +14,7 @@ const Button = ({
   };
   return (
     <button
-      className={`${className} ${SIZE[size]} flex items-center justify-center gap-2 outline-none`}
+      className={`${className} ${SIZE[size]} flex items-center justify-center gap-2 outline-none duration-200 hover:bg-opacity-90 disabled:bg-opacity-40`}
       {...props}>
       {children}
     </button>
