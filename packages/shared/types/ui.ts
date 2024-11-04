@@ -7,12 +7,17 @@ interface CommonProps {
   className?: string;
 }
 
+interface ItemType {
+  itemTitle: string;
+  itemValue: string;
+}
+
 export interface ButtonProps
   extends CommonProps,
     ButtonHTMLAttributes<HTMLButtonElement> {}
 
 export interface DropdownProps extends CommonProps {
-  items: string[];
+  items: ItemType[];
   value: any;
   setValue: (v: any) => void;
 }
