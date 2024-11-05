@@ -5,7 +5,8 @@
     "./types": "./types/index.ts",
     "./hooks": "./hooks/index.ts",
     "./utils": "./utils/index.ts",
-    "./api": "./api/index.ts"
+    "./api": "./api/index.ts",
+    "./store": "./store/index.ts"
   },
   "author": "",
   "devDependencies": {
