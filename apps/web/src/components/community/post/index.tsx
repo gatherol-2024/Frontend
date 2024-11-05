@@ -16,7 +16,7 @@ const PostContent = ({
   commentsCount
 }: PostContentProps) => {
   return (
-    <div className="rounded-md bg-white shadow-sm">
+    <div className="flex-1 bg-white shadow-sm">
       <div className="flex flex-col gap-2 border-b border-gray-300 p-4">
         <Status
           category={category}
