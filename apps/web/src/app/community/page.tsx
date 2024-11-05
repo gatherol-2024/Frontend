@@ -28,7 +28,7 @@ const CommunityPage = () => {
           />
           <Button className="bg-primary rounded-md text-white">글쓰기</Button>
         </div>
-        <div className="mt-10 bg-white shadow-md">{ItemList}</div>
+        <div className="mt-4 bg-white shadow-md">{ItemList}</div>
       </div>
     </div>
   );
