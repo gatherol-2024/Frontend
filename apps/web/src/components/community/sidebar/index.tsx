@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useAppSelector } from '@lvc/shared/store';
 
 const Sidebar = () => {
-  const recentPost = useAppSelector((state) => state.recentPostReducer);
+  const recentPost = useAppSelector((state) => state.recentPost);
   return (
     <div className="sticky top-0 hidden h-fit w-64 flex-col gap-4 rounded-md lg:flex">
       <Link href="http://localhost:8080/auth/google">
