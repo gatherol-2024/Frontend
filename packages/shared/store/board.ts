@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { BoardType } from '../types';
 const initialState: BoardType[] = [];
 
@@ -6,14 +6,14 @@ export const recentPost = createSlice({
   name: 'recentPost',
   initialState,
   reducers: {
-    addPost: (state: BoardType[], action) => {
+    addPost: (state: BoardType[], action: PayloadAction<BoardType>) => {
       const post = action.payload;
 
       const filteredState = state.filter((item) => item.id !== post.id);
 
-      filteredState.push(post);
+      filteredState.unshift(post);
 
-      if (filteredState.length > 10) filteredState.shift();
+      if (filteredState.length > 10) filteredState.pop();
 
       return filteredState;
     }
