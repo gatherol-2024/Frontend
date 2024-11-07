@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useSelector, useDispatch, useStore } from 'react-redux';
 import recentPost from './board';
+import user from './user';
 import {
   persistReducer,
   persistStore,
@@ -16,11 +17,12 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
   key: 'persist',
   storage,
-  whitelist: ['recentPost']
+  whitelist: ['recentPost', 'user']
 };
 
 const rootReducer = combineReducers({
-  recentPost
+  recentPost,
+  user
 });
 
 export const makeStore = () => {
@@ -48,6 +50,7 @@ export const makeStore = () => {
 };
 
 export * from './board';
+export * from './user';
 
 export type AppStore = ReturnType<typeof makeStore>;
 export type RootState = ReturnType<typeof rootReducer>;
