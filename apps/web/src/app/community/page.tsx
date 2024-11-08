@@ -4,6 +4,7 @@ import { useState } from 'react';
 import BoardItem from '../../components/community/board/item';
 import { CATEGORY } from '../../constants/category';
 import { useBoard } from '@lvc/shared/hooks';
+import Link from 'next/link';
 
 const CommunityPage = () => {
   const [category, setCategory] = useState('ALL');
@@ -26,7 +27,9 @@ const CommunityPage = () => {
             className="outline-primary flex-1 rounded-md border border-gray-300"
             placeholder="제목 또는 내용으로 검색"
           />
-          <Button className="bg-primary rounded-md text-white">글쓰기</Button>
+          <Link href={'/community/write'}>
+            <Button className="bg-primary rounded-md text-white">글쓰기</Button>
+          </Link>
         </div>
         <div className="mt-4 bg-white shadow-md">{ItemList}</div>
       </div>
