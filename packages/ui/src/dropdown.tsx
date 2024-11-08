@@ -36,13 +36,13 @@ const Dropdown = ({
     </div>
   ));
   return (
-    <div className={`${className} relative w-fit`}>
+    <div className={`${className} relative z-50 w-fit`}>
       <Button onClick={toggleDropdown}>
         {items?.find((item) => item.itemValue == value)?.itemTitle}
         <RiArrowDropDownLine size="1.5rem" />
       </Button>
       {isDropdownOpen && (
-        <div className="absolute left-0 top-[110%] border border-b-0 bg-inherit">
+        <div className="absolute left-0 top-[110%] border border-b-0 bg-inherit bg-white">
           {ItemList}
         </div>
       )}
