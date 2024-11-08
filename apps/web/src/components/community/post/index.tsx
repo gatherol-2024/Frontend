@@ -16,7 +16,7 @@ const PostContent = ({
   commentsCount
 }: PostContentProps) => {
   return (
-    <div className="flex-1 bg-white shadow-sm">
+    <div className="flex flex-1 flex-col bg-white shadow-sm">
       <div className="flex flex-col gap-2 border-b border-gray-300 p-4">
         <Status
           category={category}
@@ -44,7 +44,7 @@ const PostContent = ({
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-8 p-4">
+      <div className="flex flex-1 flex-col items-center justify-between gap-8 p-4">
         <div className="w-full">{content}</div>
         <Button className="border-primary hover:bg-primary text-primary rounded-md border hover:text-white">
           <LuThumbsUp />

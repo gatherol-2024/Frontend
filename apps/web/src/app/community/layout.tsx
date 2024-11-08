@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
     </Link>
   ));
   return (
-    <div className="flex w-full flex-col gap-8">
+    <div className="flex h-full w-full flex-col gap-8">
       <span>온라인 1234</span>
       <div className="relative flex h-full w-full gap-8">
         <Sidebar>
